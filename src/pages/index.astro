@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'EinsteinDB - A Relativistic Hybrid OLTP&OLAP High Performance DBMS ',
   ignoreTitleTemplate: true,
 };
 ---
@@ -35,18 +35,20 @@ const metadata = {
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      all-in-one New-SQL database system that entirely deviates from classical disk-based DBMS architectures <span class="hidden xl:inline">featuring machine code generation for data-centric query processing and multi-version concurrency control</span>
+      <span class="text-accent dark:text-white highlight"> EinsteinDB</span> + FoundationDB
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">EinsteinDB</span> 
+        + FoundationDB</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">EinsteinDB: Production-ready.</span>
+      we use an epoch guard based on causal sets to keep the memory of deleted
+nodes alive, until it is safe that no optimistic reader can access them
+anymore, i.e., every thread has advanced to the next epoch
+      
     </Fragment>
   </Hero>
 
@@ -59,43 +61,46 @@ const metadata = {
   <Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="What you get with EinsteinDB"
+    subtitle="EinsteinDB is an in-memory DBMS, the results are not affected by any
+    interrupts caused by IO. To see the effects of contention and crosspartition
+    transactions, we do not pin any threads to warehouses
+    in TPC-C."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'EinsteinDB and MilevaDB',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          'MilevaDB is the most advanced, open source, distributed SQL database with MySQL compatibility. ',
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Horizontal Scalability',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'EinsteinDB’s architecture separates compute from storage to instantly scale data workloads out or in as needed.',
         icon: 'tabler:components',
       },
       {
-        title: 'Best Practices',
+        title: 'High Performance',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+          'EinsteinDB is designed to deliver high performance for both OLTP and OLAP workloads, with real-time analytics and HTAP.',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Multi-Cloud Flexibility',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'EinsteinDB is cloud-native and can run on any public cloud, on-premises, or in hybrid environments.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'MySQL Compatibility',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+          "EinsteinDB is compatible with MySQL, so you can easily migrate your MySQL databases to EinsteinDB without changing your applications' code.",
         icon: 'tabler:arrows-right-left',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Open Source',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'EinsteinDB is open source and free to use, with a vibrant community of developers and users who contribute to its ongoing development.',
         icon: 'tabler:bulb',
       },
     ]}
@@ -105,23 +110,23 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="OLAP & OLTP"
+    title="EinsteinDB is a hybrid OLTP&OLAP high performance DBMS"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Serverless architecture',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Leverage the benefits of serverless computing to reduce operational costs and complexity, while ensuring optimal performance and scalability.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'focus entirely on your data and your app',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'EinsteinDB is a fully managed database service that enables you to focus entirely on your data and your app, not on the database.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'built-in vector search to the SQL database family,',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'EinsteinDB is the first database to bring built-in vector search to the SQL database family, enabling you to build modern applications with ease.',
       },
     ]}
     image={{
@@ -130,8 +135,9 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Unified database solution for enhanced developer experience</h3>
+      <p class="text-lg text-gray-600 dark:text-gray-400">
+        EinsteinDB is a unified database solution that provides a seamless developer experience, enabling you to build modern applications with ease.
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,23 +151,22 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'create end-to-end RAG-Enabled Search Apps',
+        description: `EinsteinDB is the first database to bring built-in vector search to the SQL database family, enabling you to create end-to-end RAG-enabled search apps.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Real-Time Recommendation Systems',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'EinsteinDB is designed to deliver high performance for both OLTP and OLAP workloads, with real-time analytics and HTAP.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Multi-Cloud Flexibility',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          "EinsteinDB NLP's Perform sentiment analysis, language translation, and text summarization for more accurate processing ",
       },
       {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+        title: 'Supports ACID transactions, suitable for scenarios requiring strong consistency such as bank transfer.',
+        description: 'The FIDel interlocking server is the metadata managing component of the entire cluster. It stores metadata of real-time data distribution of every single EinsteinDB node and the topology structure of the entire MilevaDB cluster, provides the MilevaDB Dashboard management UI, and allocates transaction IDs to distributed transactions. ',
       },
     ]}
     image={{
@@ -169,7 +174,7 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content"> EinsteinDB APIs provide native support to distributed transactions at the key-value pair level and supports the Snapshot Isolation level isolation by default.  </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -183,23 +188,23 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Real-Time Analytics',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'EinsteinDB is designed to deliver high performance for both OLTP and OLAP workloads, with real-time analytics and HTAP.',
       },
       {
-        title: 'Continuous improvement',
+        title: ' full life-cycle management for MilevaDB including deployment, upgrades, scaling, backup, and configuration changes.',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'The MilevaDB Operator is a Kubernetes Operator that provides full life-cycle management for MilevaDB including deployment, upgrades, scaling, backup, and configuration changes.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Multi-Cloud Flexibility',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'EinsteinDB is cloud-native and can run on any public cloud, on-premises, or in hybrid environments.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Enable TLS for the MySQL Client',
+        description: `You can generate multiple sets of client-side certificates. At least one set of client-side certificates is needed for the internal components of MilevaDB Operator to access the MilevaDB server. `,
       },
     ]}
     image={{
@@ -207,7 +212,7 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Horizontal Scaling</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -217,16 +222,16 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="EinsteinDB uses the Multi-Raft protocol VioletaBFT to replicate data. When a node fails, VioletaBFT automatically schedules data to fill the missing data replicas. EinsteinDB requires low read and write latency, so it is strongly recommended to use local SSD storage in a production environment."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'To ensure availability, it is recommended to use network storage for components such as MilevaDB monitoring, MilevaDB Binlog, and milevadb-backup because they do not have redundant replicas <span class="font-medium">The uniqueness of the symlink name will ensure that if another node with the same name is created</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "EinsteinDB is a distributed database that provides high availability, scalability, and consistency. It is designed to handle large-scale data workloads and is optimized for real-time analytics and HTAP.",
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'EinsteinDB ensures that the wrong local volume is not mistakenly mounted, even if its device path changes <span class="font-medium"></span>',
         description:
           "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
         icon: 'tabler:letter-case',
@@ -338,7 +343,7 @@ const metadata = {
       {
         title: 'What do I need to start?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          '',
       },
       {
         title: 'How to install the Astro + Tailwind CSS template?',
