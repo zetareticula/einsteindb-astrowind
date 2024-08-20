@@ -45,9 +45,7 @@ const metadata = {
         + FoundationDB</span
       >
       <span class="block mb-1 sm:hidden font-bold text-blue-600">EinsteinDB: Production-ready.</span>
-      we use an epoch guard based on causal sets to keep the memory of deleted
-nodes alive, until it is safe that no optimistic reader can access them
-anymore, i.e., every thread has advanced to the next epoch
+      we use an epoch guard based on causal sets to ensure the correctness of the distributed transactions.
       
     </Fragment>
   </Hero>
@@ -237,13 +235,12 @@ anymore, i.e., every thread has advanced to the next epoch
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+        title: 'EinsteinDB supports cardinality estimation for query optimiization',
+        description: 'EinsteinDB learn a pure data-driven model that can be used for different tasks such as query answering or cardinality estimation.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: 'EinsteinDB leverages graph neural networks for efficient and effective dynamic Materialized Views maintenance',
         icon: 'tabler:check',
       },
     ]}
@@ -256,58 +253,58 @@ anymore, i.e., every thread has advanced to the next epoch
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
+    title="Build Containerized Applications with Ease"
+    subtitle="Distribute immutable data to your application nodes with ease using the built-in containerization features of EinsteinDB."
     tagline="Components"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'Attribute-level schema-free data model',
+        description: "EinsteinDB's attribute-level schema-free data model allows you to store and query data without the need to define a schema.",
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
+        title: 'Causal Consistency',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+          "EinsteinDB's causal consistency model ensures that all nodes in the cluster see the same data at the same time, providing strong consistency guarantees.",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
+        title: 'Optimized for Write-Heavy Workloads',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+          'EinsteinDB is optimized for write-heavy workloads, with support for high-throughput writes and low-latency reads.',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
+        title: 'Distributed Transactions',
         description:
           "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
+        title: 'Running Causet Stores',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+          'The running causet stores the data of the MilevaDB cluster and provides the data to the MilevaDB nodes.',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        title: 'Distributed SQL',
+        description: 'EinsteinDB is a distributed SQL database that provides high availability, scalability, and consistency.',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        title: 'Database Cracking',
+        description: 'EinsteinDB uses database cracking to optimize query performance by dynamically reorganizing data.',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
+        title: 'Zero-Shot cost models for out-of-core query processing',
         description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+          'EinsteinDB uses zero-shot cost models for out-of-core query processing, enabling you to run complex queries on large datasets.',
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        title: 'Adaptive Partinioning',
+        description: 'EinsteinDB uses adaptive partitioning to automatically distribute data across nodes for optimal performance.',
         icon: 'flat-color-icons:database',
       },
     ]}
@@ -320,50 +317,46 @@ anymore, i.e., every thread has advanced to the next epoch
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="Optimized Query Processing"
+    information={`EinsteinDB uses machine code generation for data-centric query processing, enabling you to run complex queries on large datasets with ease.`}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Here are some common questions about EinsteinDB. If you have any other questions, feel free to reach out to us."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'What is EinsteinDB?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "EinsteinDB is a distributed database that provides high availability, scalability, and consistency. It is designed to handle large-scale data workloads and is optimized for real-time analytics and HTAP.",
       },
       {
-        title: 'What do I need to start?',
-        description:
-          '',
+        title: 'How does EinsteinDB differ from other databases?',
+        description: 'EinsteinDB is a horizontally scalable, cloud-native database that is optimized for real-time analytics and HTAP workloads.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'What are the key features of EinsteinDB?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'EinsteinDB is a distributed database that provides high availability, scalability, and consistency. It is optimized for real-time analytics and HTAP workloads, with support for distributed transactions and multi-cloud flexibility.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: "What's AI4DB using DiabloGPT?",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "A Regret-Bounded Query Optmizer and Evaluator named DiabloGPT is used to optimize the query processing in EinsteinDB. It uses a GPT-3 model to generate optimal query plans.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'What is Relativistic Linearizability?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "Relativistic Linearizability is a consistency model that ensures that all operations in a distributed system appear to be executed in a linear order, even in the presence of network delays and failures.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Why does EinsteinDB run on FoundationDB?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "EinsteinDB is built on top of FoundationDB to leverage its distributed storage and transactional capabilities. FoundationDB provides a reliable and scalable foundation for EinsteinDB's distributed database system.",
       },
     ]}
   />
@@ -393,12 +386,11 @@ anymore, i.e., every thread has advanced to the next epoch
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      EinsteinDB has CAP guarantees&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">using VioletaBFT</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Workload Aware Query Processing with EinsteinDB and MilevaDB 
     </Fragment>
   </CallToAction>
 </Layout>
